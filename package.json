@@ -1,0 +1,15 @@
+{
+  "name": "map-me",
+  "version": "1.0.0",
+  "description": "Example of use of socket.io to share GPS location on remote google maps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jean-Baptiste DEMONTE",
+  "license": "GPL3",
+  "dependencies": {
+    "express": "^4.12.3",
+    "socket.io": "^1.3.5"
+  }
+}

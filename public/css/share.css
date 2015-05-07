@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    /* http://lea.verou.me/css3patterns/#carbon-fibre */
+    background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+
+
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+body.init :not(#message) {
+    display: none;
+}
+body:not(.init) #message {
+    display: none;
+}
+#message {
+    width: auto;
+    font-size: 45px;
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#currentId {
+    display: inline-block;
+    text-align: center;
+}
+#currentId {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    padding: 10px 25px;
+    font-size: 35px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    margin: 5px;
+}
+#compass {
+    margin: 0 auto;
+}
+#latency {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-style: italic;
+    padding: 5px;
+}
+#latency .value {
+    display: inline-block;
+    min-width: 50px;
+    text-align: right;
+}

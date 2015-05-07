@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Location sharing through socket.io</title>
+    <link rel="stylesheet" href="css/share.css">
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="js/share.js"></script>
+</head>
+<body  class="init">
+<div id="message">Service initializing, please wait</div>
+
+<div id="header">
+    <span>Your current ID is</span><br />
+    <span id="currentId"></span>
+</div>
+
+<svg id="compass" version="1.1"  width="80%" height="80%" viewBox="0 0 454 453" preserveAspectRatio="xMidYMid meet">
+    <path fill="#8ACE89" d="M221.07,24.18l6.03-23.64l41.31,158.17L335,119.3l-38.85,66.22L453.8,226.49l-157.64,40.949l38.83,66.189  l-66.6-39.398L227.12,452.55l-41.35-158.3l-66.59,39.391l38.83-66.201L0.29,226.52l157.73-41.01l-38.83-66.21l66.58,39.39  L221.07,24.18L221.07,24.18z" id="path3" style="fill:#8acefe;fill-opacity:1" />
+    <path fill="#EDF4EE" d="M224.37,23.69l0.05,196.27l-40.89-40.88L224.37,23.69z" id="path5" style="fill:#f4fcfc;fill-opacity:0.96111113" />
+    <path fill="#EDF4EE" d="M224.37,23.69l0.05,196.27l-40.89-40.88L224.37,23.69z" id="path5" style="fill:#ff0000;fill-opacity:0.96111113" />
+    <path fill="#EDF4EE" d="M315.67,134.6l-42.41,42.51l-4.029-15.39L315.67,134.6z" id="path7" style="fill:#f4fcfc;fill-opacity:0.96111113" />
+    <path fill="#EDF4EE" d="M176.62,180.64l-15.56,4.05l-27.43-46.97L176.62,180.64z" id="path9" style="fill:#f4fcfc;fill-opacity:0.96111113" />
+    <path fill="#EDF4EE" d="M430.12,223.78l-196.53,0.03l40.83-40.88L430.12,223.78z" id="path11" style="fill:#f4fcfc;fill-opacity:0.96111113" />
+    <path fill="#EDF4EE" d="M220.61,229.141l-40.87,40.889L23.99,229.17L220.61,229.141z" id="path13" style="fill:#f4fcfc;fill-opacity:0.96111113" />
+    <path fill="#EDF4EE" d="M270.65,273.83L229.82,429.1L229.77,232.98L270.65,273.83z" id="path15" style="fill:#f4fcfc;fill-opacity:0.96111113" />
+    <path fill="#EDF4EE" d="M293.141,268.26l27.289,46.78l-42.83-42.71L293.141,268.26z" id="path17" style="fill:#f4fcfc;fill-opacity:0.96111113" />
+    <path fill="#EDF4EE" d="M180.93,275.84l4.05,15.391l-46.53,27.141L180.93,275.84z" id="path19" style="fill:#f4fcfc;fill-opacity:0.96111113" />
+    <text x="270" y="50" fill="red" font-family="Verdana" font-size="55">N</text>
+</svg>
+
+<div id="latency">
+    <span>Latency: </span>
+    <span class="value"></span>
+    <span>ms</span>
+</div>
+
+</body>
+</html>
