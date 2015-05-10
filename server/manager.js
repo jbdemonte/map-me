@@ -12,7 +12,6 @@ function
     var channels = {};
 
     function destroy(name) {
-        console.log("destroy", name);
         delete channels[name];
 
     }
